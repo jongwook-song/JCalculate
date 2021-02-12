@@ -1,0 +1,70 @@
+buildscript{
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+        querydslPluginVersion = '1.0.10'
+    }
+    repositories{
+        mavenCentral()
+        jcenter()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.jong.calculate'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.mariadb.jdbc:mariadb-java-client')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+//
+//def webappDir = "$projectDir/src/main/webapp/reactjs"
+//sourceSets {
+//    main {
+//        resources {
+//            srcDirs = ["$webappDir/build", "$projectDir/src/main/resources"]
+//        }
+//    }
+//}
+//
+//processResources {
+//    dependsOn "buildReact"
+//}
+//
+//task buildReact(type: Exec) {
+//    dependsOn "installReact"
+//    workingDir "$webappDir"
+//    inputs.dir "$webappDir"
+//    group = BasePlugin.BUILD_GROUP
+//    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+//        commandLine "npm.cmd", "run-script", "build"
+//    } else {
+//        commandLine "npm", "run-script", "build"
+//    }
+//}
+//
+//task installReact(type: Exec) {
+//    workingDir "$webappDir"
+//    inputs.dir "$webappDir"
+//    group = BasePlugin.BUILD_GROUP
+//    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+//        commandLine "npm.cmd", "audit", "fix"
+//        commandLine 'npm.cmd', 'install'
+//    } else {
+//        commandLine "npm", "audit", "fix"
+//        commandLine 'npm', 'install'
+//    }
+//}
