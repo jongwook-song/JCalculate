@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>계산기</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+<body>
+    <div class="product-div">
+        <div class="product-content">
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄1호</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td class="content-title">1+안창살 600g</td>
+                        <td class="content-value" rowspan="4">
+                            <div>
+                                <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input11" id="pre-input11"/>
+                            </div>
+                            <div>
+                                <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input12" id="pre-input12"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr><td class="content-title">1+갈비살 600g</td></tr>
+                    <tr><td class="content-title">1+등심 600g</td></tr>
+                    <tr><td class="content-title">1+안심/채끝 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄2호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1+갈비살 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input21" id="pre-input21"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input22" id="pre-input22"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1+등심 600g</td></tr>
+                <tr><td class="content-title">1+등심 600g</td></tr>
+                <tr><td class="content-title">1+안심/채끝 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄3호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1+등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input31" id="pre-input31"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input32" id="pre-input32"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1+등심 600g</td></tr>
+                <tr><td class="content-title">1+안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1+업진/부채 600g</td></tr>
+
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄4호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1+등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input41" id="pre-input41"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input42" id="pre-input42"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1+안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1+업진 600g</td></tr>
+                <tr><td class="content-title">1+부채 600g</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="product-content">
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄5호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1++안창살 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input51" id="pre-input51"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input52" id="pre-input52"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1++갈비살 600g</td></tr>
+                <tr><td class="content-title">1++등심 600g</td></tr>
+                <tr><td class="content-title">1++안심/채끝 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄6호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1++갈비살 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input61" id="pre-input61"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input62" id="pre-input62"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1++등심 600g</td></tr>
+                <tr><td class="content-title">1++등심 600g</td></tr>
+                <tr><td class="content-title">1++안심/채끝 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄7호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1++등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input71" id="pre-input71"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input72" id="pre-input72"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1++등심 600g</td></tr>
+                <tr><td class="content-title">1++안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1++업진/부채 600g</td></tr>
+
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 선비숨결 프리미엄8호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1++등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="pre-input81" id="pre-input81"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="pre-input82" id="pre-input82"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1++안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1++업진 600g</td></tr>
+                <tr><td class="content-title">1++부채 600g</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="product-content">
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 로스 세트 1호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="3">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="ros-input11" id="ros-input11"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="ros-input12" id="ros-input12"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1등급 안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1등급 부채/업진 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 로스 세트 2호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 갈비살 600g</td>
+                    <td class="content-value" rowspan="5">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="ros-input21" id="ros-input21"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="ros-input22" id="ros-input22"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1등급 등심 600g</td></tr>
+                <tr><td class="content-title">1등급 등심 600g</td></tr>
+                <tr><td class="content-title">1등급 안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1등급 부채/업진 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 로스 세트 3호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="ros-input31" id="ros-input31"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="ros-input32" id="ros-input32"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1등급 등심 600g</td></tr>
+                <tr><td class="content-title">1등급 안심/채끝 600g</td></tr>
+                <tr><td class="content-title">1등급 부채/업진 600g</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="product-content">
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 알뜰 세트 1호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">불고기 600g</td>
+                    <td class="content-value" rowspan="5">
+                        <input type="number" value="0" class="count-value" name="thrift-input1" id="thrift-input1"/>
+                    </td>
+                </tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">국거리 600g</td></tr>
+                <tr><td class="content-title">산적 600g</td></tr>
+                <tr><td class="content-title">불고기양념x2</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 알뜰 세트 2호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">불고기 600g</td>
+                    <td class="content-value" rowspan="5">
+                        <input type="number" value="0" class="count-value" name="thrift-input2" id="thrift-input2"/>
+                    </td>
+                </tr>
+                <tr><td class="content-title">국거리 600g</td></tr>
+                <tr><td class="content-title">산적 600g</td></tr>
+                <tr><td class="content-title">불고기양념x2</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 찜갈비 세트</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">찜갈비 4kg</td>
+                    <td class="content-title">
+                        <input type="number" value="0" class="count-value" name="steam-input1" id="steam-input1"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="product-content">
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 혼합 세트 1호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <input type="number" value="0" class="count-value" name="mix-input1" id="mix-input1"/>
+                    </td>
+                </tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">불고기 양념x2</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 혼합 세트 2호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="3">
+                        <input type="number" value="0" class="count-value" name="mix-input2" id="mix-input2"/>
+                    </td>
+                </tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">국거리 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 혼합 세트 3호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="mix-input31" id="mix-input31"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="mix-input32" id="mix-input32"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1등급 안심/채끝 600g</td></tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">국거리 600g</td></tr>
+                </tbody>
+            </table>
+            <table class="product-content-table">
+                <thead><tr><th colspan="2">영주한우 혼합 세트 4호</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="content-title">1등급 등심 600g</td>
+                    <td class="content-value" rowspan="4">
+                        <div>
+                            <span>1호 : </span><input type="number" value="0" class="count-value" name="mix-input41" id="mix-input41"/>
+                        </div>
+                        <div>
+                            <span>2호 : </span><input type="number" value="0" class="count-value" name="mix-input42" id="mix-input42"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td class="content-title">1등급 안심/채끝 600g</td></tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                <tr><td class="content-title">불고기 600g</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="export-div">
+        <button id="cal-btn">계산</button>
+        <button>Excel 내보내기</button>
+    </div>
+    <div class="product-result">
+        <div class="product-result-content">
+            <table class="product-result-content-table">
+                <thead><tr><th colspan="2">1++</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="result-content-title">1++ 안창살</td>
+                    <td class="result-content-value"><span id="ppskirt-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 갈비살</td>
+                    <td class="result-content-value"><span id="ppchop-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 등심</td>
+                    <td class="result-content-value"><span id="ppsirloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 안심</td>
+                    <td class="result-content-value"><span id="pptenderloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 채끝</td>
+                    <td class="result-content-value"><span id="ppstriploin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 업진</td>
+                    <td class="result-content-value"><span id="pprisket-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 부채</td>
+                    <td class="result-content-value"><span id="ppblade-value"></span>g</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="product-result-content-table">
+                <thead><tr><th colspan="2">1+</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="result-content-title">1+ 안창살</td>
+                    <td class="result-content-value"><span id="pskirt-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 갈비살</td>
+                    <td class="result-content-value"><span id="pchop-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 등심</td>
+                    <td class="result-content-value"><span id="psirloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 안심</td>
+                    <td class="result-content-value"><span id="ptenderloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 채끝</td>
+                    <td class="result-content-value"><span id="pstriploin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 업진</td>
+                    <td class="result-content-value"><span id="prisket-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 부채</td>
+                    <td class="result-content-value"><span id="pblade-value"></span>g</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="product-result-content-table">
+                <thead><tr><th colspan="2">1등</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="result-content-title">1등급 갈비살</td>
+                    <td class="result-content-value"><span id="gchop-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1등급 등심</td>
+                    <td class="result-content-value"><span id="gsirloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1등급 안심</td>
+                    <td class="result-content-value"><span id="gtenderloin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1등급 채끝</td>
+                    <td class="result-content-value"><span id="gstriploin-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1등급 업진</td>
+                    <td class="result-content-value"><span id="grisket-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1등급 부채</td>
+                    <td class="result-content-value"><span id="gblade-value"></span>g</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="product-result-content-table">
+                <thead><tr><th colspan="2">기타</th></tr></thead>
+                <tbody>
+                <tr>
+                    <td class="result-content-title">불고기</td>
+                    <td class="result-content-value"><span id="bulgogi-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">국거리</td>
+                    <td class="result-content-value"><span id="soup-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">산적</td>
+                    <td class="result-content-value"><span id="sanjuk-value"></span>g</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">불고기 양념</td>
+                    <td class="result-content-value"><span id="season-value"></span>개</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">찜갈비</td>
+                    <td class="result-content-value"><span id="steam-value"></span>kg</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{>fun}}
+</body>
+</html>
