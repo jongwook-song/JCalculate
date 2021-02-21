@@ -3,8 +3,81 @@ var main = {
         var _this = this;
         $('#cal-btn').on('click', function(){
             _this.cal();
-        })
+        });
+
+        $('.count-value').keydown(function(key) {
+             if (key.keyCode == 13) {
+                 _this.cal();
+             }
+         });
+
+        $('#excel-export').on('click', function(){
+            _this.excelExport();
+        });
     },
+
+    //엑셀 내보내기
+    excelExport : function(){
+
+        this.cal();
+
+        var excelExportObject = new Object();
+
+        excelExportObject.ppskirt = $("#ppskirt-value").text();
+        excelExportObject.ppchop = $("#ppchop-value").text();
+        excelExportObject.ppsirloin = $("#ppsirloin-value").text();
+        excelExportObject.pptenderloin = $("#pptenderloin-value").text();
+        excelExportObject.ppstriploin = $("#ppstriploin-value").text();
+        excelExportObject.pprisket = $("#pprisket-value").text();
+        excelExportObject.ppblade = $("#ppblade-value").text();
+        excelExportObject.pskirt = $("#pskirt-value").text();
+        excelExportObject.pchop = $("#pchop-value").text();
+        excelExportObject.psirloin = $("#psirloin-value").text();
+        excelExportObject.ptenderloin = $("#ptenderloin-value").text();
+        excelExportObject.pstriploin = $("#pstriploin-value").text();
+        excelExportObject.prisket = $("#prisket-value").text();
+        excelExportObject.pblade = $("#pblade-value").text();
+        excelExportObject.gchop = $("#gchop-value").text();
+        excelExportObject.gsirloin = $("#gsirloin-value").text();
+        excelExportObject.gtenderloin = $("#gtenderloin-value").text();
+        excelExportObject.gstriploin = $("#gstriploin-value").text();
+        excelExportObject.grisket = $("#grisket-value").text();
+        excelExportObject.gblade = $("#gblade-value").text();
+        excelExportObject.bulgogi = $("#bulgogi-value").text();
+        excelExportObject.soup = $("#soup-value").text();
+        excelExportObject.sanjuk = $("#sanjuk-value").text();
+        excelExportObject.season = $("#season-value").text();
+        excelExportObject.steam = $("#steam-value").text();
+
+        console.log( excelExportObject);
+
+//        $.ajax({
+//            type: 'POST',
+//            url: '/excel/export',
+//            dataType: 'json',
+//            contentType: 'application/json; charset=utf-8',
+//            data: JSON.stringify( excelExportObject),
+//        }).done(function( data){
+//            alert('내보내기 완료');
+//        }).fail(function (error){
+//            alert('내보내기 실패');
+//        });
+        $.fileDownload("/excel/export", {
+            httpMethod: "POST",
+            data : excelExportObject,
+            contentType: 'application/json; charset=utf-8',
+            successCallback: function (url) {
+                alert("성공");
+            },
+            failCallback: function (responseHtml, url) {
+                alert("실패");
+            }
+        });
+        // 버튼의 원래 클릭 이벤트를 중지 시키기 위해 필요합니다.
+        return false;
+    },
+
+    // 계산 관련
     cal : function(){
         var ppskirt = 0; // 1++ 안창살
         var ppchop = 0; // 1++ 갈비살
@@ -61,7 +134,6 @@ var main = {
         count = $('#pre-input22').val();
         pchop += 600*count; // 1+ 갈비살
         psirloin += 600*2*count; // 1+ 등심
-        ptenderloin += 600*count; // 1+ 안심
         pstriploin += 600*count; // 1+ 채끝
 
         // 프리미엄3-1호
@@ -114,7 +186,6 @@ var main = {
         count = $('#pre-input62').val();
         ppchop += 600*count; // 1++ 갈비살
         ppsirloin += 600*2*count; // 1++ 등심
-        pptenderloin += 600*count; // 1++ 안심
         ppstriploin += 600*count; // 1++ 채끝
 
         // 프리미엄7-1호
@@ -197,7 +268,7 @@ var main = {
 
         // 찜갈비
         count = $('#steam-input1').val();
-        steam += 600*count; // 찜갈비
+        steam += 4*count; // 찜갈비
 
         // 혼합 1호
         count = $('#mix-input1').val();
@@ -237,6 +308,29 @@ var main = {
         gstriploin += 600*count; // 1등급 채끝
         bulgogi += 600*2*count; // 불고기
 
+        ppskirt = ppskirt/1000;
+        ppchop = ppchop/1000;
+        ppsirloin = ppsirloin/1000;
+        pptenderloin = pptenderloin/1000;
+        ppstriploin = ppstriploin/1000;
+        pprisket = pprisket/1000;
+        ppblade = ppblade/1000;
+        pskirt = pskirt/1000;
+        pchop = pchop/1000;
+        psirloin = psirloin/1000;
+        ptenderloin = ptenderloin/1000;
+        pstriploin = pstriploin/1000;
+        prisket = prisket/1000;
+        pblade = pblade/1000;
+        gchop = gchop/1000;
+        gsirloin = gsirloin/1000;
+        gtenderloin = gtenderloin/1000;
+        gstriploin = gstriploin/1000;
+        grisket = grisket/1000;
+        gblade = gblade/1000;
+        bulgogi = bulgogi/1000;
+        soup = soup/1000;
+        sanjuk = sanjuk/1000;
 
         $("#ppskirt-value").text(ppskirt);
         $("#ppchop-value").text(ppchop);

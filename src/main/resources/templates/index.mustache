@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <title>계산기</title>
         <link rel="stylesheet" href="css/index.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/js/jquery-3.1.0.min.js"></script>
+        <script src="/js/jquery.fileDownload.js"></script>
     </head>
 <body>
     <div class="product-div">
@@ -337,7 +338,7 @@
     </div>
     <div class="export-div">
         <button id="cal-btn">계산</button>
-        <button>Excel 내보내기</button>
+        <button id="excel-export">Excel 내보내기</button>
     </div>
     <div class="product-result">
         <div class="product-result-content">
@@ -345,32 +346,32 @@
                 <thead><tr><th colspan="2">1++</th></tr></thead>
                 <tbody>
                 <tr>
-                    <td class="result-content-title">1++ 안창살</td>
-                    <td class="result-content-value"><span id="ppskirt-value"></span>g</td>
-                </tr>
-                <tr>
                     <td class="result-content-title">1++ 갈비살</td>
-                    <td class="result-content-value"><span id="ppchop-value"></span>g</td>
+                    <td class="result-content-value"><span id="ppchop-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1++ 등심</td>
-                    <td class="result-content-value"><span id="ppsirloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="ppsirloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1++ 안심</td>
-                    <td class="result-content-value"><span id="pptenderloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="pptenderloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1++ 채끝</td>
-                    <td class="result-content-value"><span id="ppstriploin-value"></span>g</td>
+                    <td class="result-content-value"><span id="ppstriploin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1++ 업진</td>
-                    <td class="result-content-value"><span id="pprisket-value"></span>g</td>
+                    <td class="result-content-value"><span id="pprisket-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1++ 부채</td>
-                    <td class="result-content-value"><span id="ppblade-value"></span>g</td>
+                    <td class="result-content-value"><span id="ppblade-value"></span>kg</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1++ 안창살</td>
+                    <td class="result-content-value"><span id="ppskirt-value"></span>kg</td>
                 </tr>
                 </tbody>
             </table>
@@ -378,61 +379,61 @@
                 <thead><tr><th colspan="2">1+</th></tr></thead>
                 <tbody>
                 <tr>
-                    <td class="result-content-title">1+ 안창살</td>
-                    <td class="result-content-value"><span id="pskirt-value"></span>g</td>
-                </tr>
-                <tr>
                     <td class="result-content-title">1+ 갈비살</td>
-                    <td class="result-content-value"><span id="pchop-value"></span>g</td>
+                    <td class="result-content-value"><span id="pchop-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1+ 등심</td>
-                    <td class="result-content-value"><span id="psirloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="psirloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1+ 안심</td>
-                    <td class="result-content-value"><span id="ptenderloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="ptenderloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1+ 채끝</td>
-                    <td class="result-content-value"><span id="pstriploin-value"></span>g</td>
+                    <td class="result-content-value"><span id="pstriploin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1+ 업진</td>
-                    <td class="result-content-value"><span id="prisket-value"></span>g</td>
+                    <td class="result-content-value"><span id="prisket-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1+ 부채</td>
-                    <td class="result-content-value"><span id="pblade-value"></span>g</td>
+                    <td class="result-content-value"><span id="pblade-value"></span>kg</td>
+                </tr>
+                <tr>
+                    <td class="result-content-title">1+ 안창살</td>
+                    <td class="result-content-value"><span id="pskirt-value"></span>kg</td>
                 </tr>
                 </tbody>
             </table>
             <table class="product-result-content-table">
-                <thead><tr><th colspan="2">1등</th></tr></thead>
+                <thead><tr><th colspan="2">1등급</th></tr></thead>
                 <tbody>
                 <tr>
                     <td class="result-content-title">1등급 갈비살</td>
-                    <td class="result-content-value"><span id="gchop-value"></span>g</td>
+                    <td class="result-content-value"><span id="gchop-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1등급 등심</td>
-                    <td class="result-content-value"><span id="gsirloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="gsirloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1등급 안심</td>
-                    <td class="result-content-value"><span id="gtenderloin-value"></span>g</td>
+                    <td class="result-content-value"><span id="gtenderloin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1등급 채끝</td>
-                    <td class="result-content-value"><span id="gstriploin-value"></span>g</td>
+                    <td class="result-content-value"><span id="gstriploin-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1등급 업진</td>
-                    <td class="result-content-value"><span id="grisket-value"></span>g</td>
+                    <td class="result-content-value"><span id="grisket-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">1등급 부채</td>
-                    <td class="result-content-value"><span id="gblade-value"></span>g</td>
+                    <td class="result-content-value"><span id="gblade-value"></span>kg</td>
                 </tr>
                 </tbody>
             </table>
@@ -441,15 +442,15 @@
                 <tbody>
                 <tr>
                     <td class="result-content-title">불고기</td>
-                    <td class="result-content-value"><span id="bulgogi-value"></span>g</td>
+                    <td class="result-content-value"><span id="bulgogi-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">국거리</td>
-                    <td class="result-content-value"><span id="soup-value"></span>g</td>
+                    <td class="result-content-value"><span id="soup-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">산적</td>
-                    <td class="result-content-value"><span id="sanjuk-value"></span>g</td>
+                    <td class="result-content-value"><span id="sanjuk-value"></span>kg</td>
                 </tr>
                 <tr>
                     <td class="result-content-title">불고기 양념</td>
